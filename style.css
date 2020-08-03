@@ -70,27 +70,6 @@ p {
 .brand h1 span {
 	color: crimson;
 }
-input[type=text] {
-	width: 100%;
-	padding: 12px;
-	border: 3px solid black;
-	border-radius: 4px;
-	box-sizing: border-box;
-	margin-top: 6px;
-	margin-bottom: 16px;
-	resize: vertical;
-  }
-  input[type=submit] {
-	background-color: #4CAF50;
-	color: white;
-	padding: 12px 20px;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-  }
-  input[type=submit]:hover {
-	background-color: #45a049;
-  }
 
 
 
@@ -530,6 +509,30 @@ input[type=text] {
 	display: flex;
 	flex-direction: column;
 }
+.contact-form label p{
+	font-weight: 500;
+}
+#contact input[type=text] {
+	width: 100%;
+	padding: 12px;
+	border: 3px solid black;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+  }
+  #contact input[type=submit] {
+	background-color: crimson;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  #contact input[type=submit]:hover {
+	background-color: #45a049;
+  }
 
 
 
@@ -568,6 +571,29 @@ input[type=text] {
     display: flex;
     flex-direction: column;
   }
+  #signuplogin input[type=text] {
+	width: 100%;
+	padding: 12px;
+	border: 3px solid black;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+  }
+  #signuplogin input[type=submit] {
+	background-color: crimson;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  #signuplogin input[type=submit]:hover {
+	background-color: #45a049;
+  }
+
+
 /* End of Login Page  */
 
 
