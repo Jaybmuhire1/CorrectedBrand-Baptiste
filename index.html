@@ -38,7 +38,7 @@
         <h1>Hello, <span></span></h1>
         <h1>My Name is <span></span></h1>
         <h1>Baptiste <span></span></h1>
-        <a href="#projects" type="button" class="cta">Portfolio</a>
+        <a href="#about" type="button" class="cta">more about me</a>
       </div>
     </div>
   </section>
@@ -98,7 +98,7 @@
             <h1>Amazing Journey To Software Developer</h1>
             <h2>How could you became a global software Engineer?</h2>
             <p>My first Project was to design and impliment my Brand wesite and deploy it on git hub repo and then after
-                host it on netlify. The project was somehow challenging but due to passion and hardwork, it was successful...<a href="#">Read more</a> 
+                host it on netlify. The project was somehow challenging but due to passion and hardwork, it was successful...<a href="#" class="more">read more</a> 
             </p>
           </div>
           <div class="project-img">
@@ -113,7 +113,7 @@
                 host it on netlify. The project was somehow challenging but due to passion and hardwork, it was successful.</p>
           </div>
           <div class="project-img">
-            <img src="./img/computer.jpg" alt="img">
+            <img src="./img/Andela.jpg" alt="img">
           </div>
         </div>
         <div class="project-item">
@@ -129,7 +129,7 @@
         </div>
         <div class="project-item">
           <div class="project-info">
-            <h1>Project 4</h1>
+            <h1>Did you know that you can be a software developer from scrath?</h1>
             <h2>Coding is Love</h2>
             <p>My first Project was to design and impliment my Brand wesite and deploy it on git hub repo and then after
                 host it on netlify. The project was somehow challenging but due to passion and hardwork, it was successful.</p>
@@ -140,7 +140,7 @@
         </div>
         <div class="project-item">
           <div class="project-info">
-            <h1>Project 5</h1>
+            <h1>Evolution of ECMA</h1>
             <h2>Web designing is Amazing</h2>
             <p>My first Project was to design and impliment my Brand wesite and deploy it on git hub repo and then after
                 host it on netlify. The project was somehow challenging but due to passion and hardwork, it was successful.</p>
@@ -165,7 +165,7 @@
       <div class="col-right">
         <h1 class="section-title">About <span>me</span></h1>
         <h2>Current Occupation</h2>
-        <p>AI am an Andela trainee in Andela Technical Leadership Program cohort 4, where i am exploring different technical skills in software 
+        <p>I am an Andela trainee in Andela Technical Leadership Program cohort 4, where i am exploring different technical skills in software 
           development by use of html,css and JavaScript to provide projects that are solutions 
           to human suffering problems. I have good news to let you know about the right candidate and right services provider that you want 
           our business, The solution is here Jean Baptiste Muhire an expert in Web design,Graphic design,HTML and CSS</p>
@@ -223,12 +223,12 @@
       </div>
       <div class=" contact-form container">
         <h1>Please fell free to contact me</h1>
-          <form>
+          <form id="contactForm">
             <label for="fname">First Name</label>
             <input type="text" id="fname" name="firstname" placeholder="Your name..">
         
             <label for="lname">Last Name</label>
-            <input type="text" id=" lname" name="lastname" placeholder="Your last name..">
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
         
             <label for="subject">Subject</label>
             <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
@@ -303,6 +303,23 @@
     </div>
   </section>
   <!-- End Footer -->
+  <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAl_3Zfm_LWNJvQ6SMSVHmqXyVbveEcY9A",
+      authDomain: "correctedbrand-baptiste.firebaseapp.com",
+      databaseURL: "https://correctedbrand-baptiste.firebaseio.com",
+      projectId: "correctedbrand-baptiste",
+      storageBucket: "correctedbrand-baptiste.appspot.com",
+      messagingSenderId: "332771326335",
+      appId: "1:332771326335:web:031bfd23ac72a7d263024a",
+      measurementId: "G-9SBQ4TJN1J"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
   <script src="./app.js"></script>
 </body>
 </html>
