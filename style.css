@@ -399,6 +399,10 @@ p {
 #projects .project-item:hover .project-img img {
 	transform: scale(1.1);
 }
+#projects .more {
+	text-decoration: none;
+	color: crimson;
+}
 /* End Projects section */
 
 /* About Section */
@@ -562,10 +566,12 @@ p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 50%;
+	width: 50%;
+	height: 50%;
     margin-left: 30px;
     overflow: hidden;
-    border-radius: 10px;
+	border-radius: 2px;
+	box-sizing: border-box;
   }
   #signuplogin .signuplogin {
     display: flex;

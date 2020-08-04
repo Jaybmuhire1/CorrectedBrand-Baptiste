@@ -23,3 +23,33 @@ menu_item.forEach((item) => {
 		mobile_menu.classList.toggle('active');
 	});
 });
+// End of responsiveness js 
+
+// Start of contact form 
+
+var db=firebase.firestore();
+document.getElementById('contactForm'). addEventListener('submit', submitForm);
+function submitForm(e) {
+	e.preventDefault();
+	var firstname=myInput('fname');
+	var lastaname=myInput('lname');
+	var subject1=myInput('subject');
+	saveName(firstname,lastaname,subject1);
+	console.log(myInput('subject'));
+}
+function saveName(a,b,c) {
+db.collection('Contact').doc().set({
+	FirstName:a,
+	LastName:b,
+	Subject:c
+})
+
+.then(function (){console.log('Contact Saved');})
+.catch(function (error){console.log('Failed Contact');})
+}
+
+function myInput(id) {
+	return document.getElementById(id).value;
+}
+
+// End of start of contact form 
