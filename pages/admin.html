@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="../style/admin.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav-bar">
+            <div class="brand">
+              <div class="brand-icon">
+                <img src="https://img.icons8.com/ios-filled/50/000000/microsoft-admin.png"/>
+              </div>
+              <a class="brandclass" href="#admin"><h1><span>A</span>dmin <span>Da</span>shboard</h1></a>
+            </div>
+            <div class="nav-list">
+              <nav>
+                <div><a class="nav-link" href="../index.html">Home</a></div>
+                <di><a class="nav-link" href="services.html">Services</a></di>
+                <div><a class="nav-link" href="blog.html">Blog</a></div>
+                <div><a class="nav-link" href="about.html">About</a></div>
+                <div><a class="nav-link" href="contact.html">Contact</a></div>
+                <div><a class="nav-link" href="#Logout">Logout</a></div>
+              </nav>
+            </div>
+          </div>
+          <div class="wrapper2">
+                <table id="customers">
+                  <tr>
+                    <th>Post title</th>
+                    <th>Due date</th>
+                    <th>Edit Blog</th>
+                    <th>Delete</th>
+                  </tr>
+                  <tr>
+                    <td>Amazing Journey To Software Developer</td>
+                    <td>10/08/2029</td>
+                    <td><img class="tbicon" src="https://img.icons8.com/fluent/48/000000/edit.png"/></td>
+                    <td><img class="tbicon" src="https://img.icons8.com/flat_round/64/000000/delete-sign.png"/></div></td>
+                  </tr>
+                  <tr>
+                    <td>Berglunds snabbköp</td>
+                    <td>Christina Berglund</td>
+                    <td><img class="tbicon" src="https://img.icons8.com/fluent/48/000000/edit.png"/></td>
+                    <td><img class="tbicon" src="https://img.icons8.com/flat_round/64/000000/delete-sign.png"/></td>
+                  </tr>
+                  <tr>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td><img class="tbicon" src="https://img.icons8.com/fluent/48/000000/edit.png"/></td>
+                    <td><img class="tbicon" src="https://img.icons8.com/flat_round/64/000000/delete-sign.png"/></td>
+                  </tr>
+                  <tr>
+                    <td>Ernst Handel</td>
+                    <td>Roland Mendel</td>
+                    <td><img class="tbicon" src="https://img.icons8.com/fluent/48/000000/edit.png"/></td>
+                    <td><img class="tbicon" src="https://img.icons8.com/flat_round/64/000000/delete-sign.png"/></td>
+                    </tr>
+              </table>
+              </div>
+              <div class="blogpost-form">
+                <!-- <h1>Add Post to Blog</h1> -->
+                 <form id="blogpost-form">
+                    <label for="fname">First Name</label>
+                     <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+            
+                <input type="submit" value="Submit">
+              </form>
+            </div> 
+      
+          </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+    <script src="../script/admin.js"></script>
+</body>
+</html>
