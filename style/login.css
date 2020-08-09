@@ -4,13 +4,31 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+html,body {
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	width: 100vw;
+}
+
 #signuplogin .container {
   height: 100vh;
   width: 100vw;
   background-color: brown;
 }
 
- input[type=text] {
+ input[type=email] {
+	  width: 100%;
+	  padding: 12px;
+	  border: 3px solid black;
+	  border-radius: 4px;
+	  box-sizing: border-box;
+	  margin-top: 6px;
+	  margin-bottom: 16px;
+	  resize: vertical;
+  }
+  input[type=password] {
 	  width: 100%;
 	  padding: 12px;
 	  border: 3px solid black;
@@ -67,7 +85,7 @@
     width: 100vw;
   }
 .signuplogin-header{
-  background-color: cornflowerblue;
+  background-color: #29323c;
 }
 
 img{

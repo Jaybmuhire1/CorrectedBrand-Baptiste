@@ -13,7 +13,7 @@
         <div class="signuplogin-header">
               <div class="nav-bar">
                 <div class="brand">
-                  <a class="brandclass" href="#hero"><h1><span>M</span>uhire <span>J</span>ayb</h1></a>
+                  <a class="brandclass" href="../index.html"><h1><span>M</span>uhire <span>J</span>ayb</h1></a>
                 </div>
                 <div class="nav-list">
                   <nav>
@@ -30,12 +30,12 @@
              <div class="sign-login">
                   <div class="login">
                      <div class="login-header"><h1>If You are a regular member,please login below</h1></div>
-                   <form>
-                      <label for="fname">First Name </label>
-                     <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                   <form id="signinCntn">
+                      <label for="emai">Email </label>
+                     <input type="email" id="emailLogin" name="email" placeholder="Your email">
           
-                     <label for="lname">Last Name </label>
-                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                     <label for="lname">Password </label>
+                      <input type="password" id="passLogin" name="password" placeholder="Your password..">
                      <input type="submit" value="Login">
                  </form>
                      <div class="footerlogin"><h1>If you are new here,Please <a class="signupclass" href="signup.html">SIGN UP</a></h1></div>
@@ -46,5 +46,10 @@
         </div> 
     </div>
     </section>
+
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+    <script src="../script/login.js"></script>
 </body>
 </html>
